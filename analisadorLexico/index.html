@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>  
+    <meta charset="utf-8">
+    <title>Analisador Léxico</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+
+  <body>
+    <main>
+        <div class="topbar">
+            <p class="titulo-topbar">Analisador Léxico</p>
+        </div>
+
+        <div class="form1">
+            <div class="tokens">
+                <p class="titulo">Adicionar Tokens</p>
+                <div class="subTitulo"></div>
+                <input id="token" type="text"/><br>
+                <div>
+                    <button onclick="adicionarToken();">Adicionar Token</button>
+                    <button onclick="tokenAleatorio();">Token Aleatório</button>
+                </div>
+            </div>
+
+            <div class="tokens">
+                <p class="titulo">Validar Token</p>
+                <div class="subTitulo"></div>
+                <input type="text" id="validarToken" autocomplete="off"/>
+                <br>
+                <button onclick="removerTokens();">Remover Tokens</button>
+            </div>    
+        </div>
+
+        <div class="form2">
+            <div id="tokens">
+                <p class="titulo">Tokens</p>
+                <div class="subTitulo" style="margin-bottom: 2px;"></div>
+                <table class="list-group">     
+                    <tbody id="listaTokens"></tbody>
+                </table>
+            </div>    
+        </div>
+        
+        <div class="form3">
+            <table id="tabelaTokens"></table>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

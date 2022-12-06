@@ -1,0 +1,200 @@
+html,
+body{
+    margin: 0;
+	padding: 0;
+	width: 100%;
+    height: 100%;
+}
+
+main{
+    min-height: 100vh;
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topbar{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin-bottom: 50px;
+}
+
+.titulo-topbar{
+    color: white;
+    font-size: 32px;
+}
+
+input{
+    font-size: 1rem;
+    text-transform: lowercase;
+    outline: none;
+    border-bottom: 1px solid gray !important;
+    margin-bottom: 10px;
+    height: 35px !important;
+}
+
+.form1{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-top: 1.35rem;
+}
+
+.form2{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 76%;
+    padding-bottom: 50px;
+}
+
+.form3{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 99%;
+}
+
+#validarToken{
+    background-color: lightgray;
+    width: 100%;
+    height: 30px;
+    border: gray;
+    border-radius: 3px;
+    border:none;
+}
+
+#token{
+    background-color: lightgray;
+    width: 100%;
+    height: 30px;
+    border: gray;
+    border-radius: 3px;
+}
+
+.tokens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    width: 33.2%;
+    padding: 0.5rem 0.5rem;
+    margin: 0px 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.68);
+}
+
+button {
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: 0.25rem;
+    transition: all 0.15s ease-in-out;
+    color: white;
+    background-color: gray;
+}
+
+#tokens{
+    position:relative;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5rem 0.5rem;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px 0px rgba(50, 50, 50, 0.68);
+    height: 100px;
+}
+
+.titulo{
+    display: flex; 
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+    font-size: 1.5rem;
+}
+
+.subTitulo{
+    background: #0000001c;
+    border: 1px;
+    width: 100%;
+    height: 1px;
+}
+
+.list-group{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#listaTokens{
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 1.3rem;
+}
+
+.list-group-item{
+    display: contents;
+}
+
+#tabelaTokens {
+    margin-bottom: 5%;
+    width: 70%; 
+    border-collapse: collapse;
+}
+
+#tabelaTokens th{
+  background: #fffefe;
+  padding: 3px 3px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#tabelaTokens td{
+  padding: 3px 3px;
+  text-align: center;
+  border: 1px solid black;
+  width: 40px;
+}
+
+tr:nth-child(even){
+    background-color: #979797;
+}
+
+.selecionaEstadoCerto td.selecionaCampoCerto{
+    background: lightgreen;
+}
+
+.selecionaEstadoErrado td.selecionaCampoErrado{
+    background: lightcoral;
+}
+
+.tokenFinalCorreto td{
+  background: lightgreen;
+}
+
+#validarToken.errado{
+    background: lightcoral;
+}
+  
+#validarToken.certo{
+    background: lightgreen;
+}
